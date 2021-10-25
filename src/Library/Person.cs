@@ -4,15 +4,44 @@ namespace UnitTestAndDebug
 {
     public class Person
     {
-        public Person(string name, string id)
+        public Person(string name, string id, string fecha)
         {
             this.Name = name;
             this.ID = id;
+            this.Fecha = fecha;
+
         }
 
         private string name;
 
         private string id;
+
+        private string fecha;
+
+
+
+
+        public string Fecha
+        {
+            get
+            {
+                return this.fecha;
+            }
+            
+            set
+            {
+                if (fecha.Length < 10)
+                {
+                    this.fecha = value;
+                }
+            }
+        }
+
+    
+
+        
+
+
 
         public string Name
         {
