@@ -30,7 +30,7 @@ namespace UnitTestAndDebug
             
             set
             {
-                if (fecha.Length < 10)
+                if (value.Length < 10)
                 {
                     this.fecha = value;
                 }
